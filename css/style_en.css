@@ -1,0 +1,238 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #374bff;
+  --secondary-color: #e8c417;
+  --text-color: #222020;
+  --text-secondary-color: #54555d;
+  --text-gray: #777881;
+  --bg-card: #ececed;
+  --bg-section: #f7f7f7;
+  --bg-nav: #f5f8ff;
+}
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+/* //start navbar/// */
+.navbar-brand {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+.navbar-nav {
+  background: var(--bg-nav);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  margin: 0 6px;
+  color: #333333;
+}
+.navbar-nav .nav-item a {
+  color: #333333;
+  padding: 3px 20px;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.active {
+  background: var(--primary-color);
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 24px;
+  padding: 3px 20px;
+}
+.language {
+  border-radius: 24px;
+  padding: 10px 12px;
+  background: var(--bg-card);
+  width: fit-content;
+}
+/* //end navbar/// */
+
+/* start header//// */
+header {
+  padding: 100px 0;
+}
+.text-header h1 {
+  line-height: 2.5;
+  font-size: 40px;
+}
+.text-header p {
+  color: var(--text-secondary-color);
+  font-size: 16px;
+}
+.partner {
+  color: var(--primary-color);
+}
+.btn a {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 70px;
+  width: 222px;
+  border-radius: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.btn a:focus,
+.btn a:active {
+  outline: none;
+  border: none;
+}
+
+.btn a:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.img-header {
+  background-image: url(../assets/Line\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  margin-top: -80px;
+}
+/* end header//// */
+/* start Services */
+.Services {
+  padding: 80px 0;
+}
+.text-services h2 {
+  background-color: var(--secondary-color);
+  padding: 5px 15px;
+  width: fit-content;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.text-services span {
+  color: var(--text-gray);
+  font-size: 20px;
+}
+.btn-silder{
+  margin-top: 12%;
+}
+.bg-arrow i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9c9da4;
+  cursor: pointer;
+}
+.card{
+  width: 342px;
+  height: 420px;
+  background-color: var(--bg-card);
+  border-radius: 24px;
+  padding: 25px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  
+}
+.card:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.icon-card i{
+  width: 56px;
+  height: 56px;
+  border-radius:16px;
+ background-color: #FEFEFE;
+ color: #222020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 20px;
+}
+.text-card h3{
+  font-size: 24px;
+}
+.text-card p{
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.card:hover .text-card p {
+  color: #fff;
+}
+.btn-ser{
+  background-color: var(--primary-color);
+  padding: 5px 25px;
+  width: fit-content;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20%;
+}
+.card:hover .btn-ser {
+  background-color: #fff;
+  
+}
+.btn-ser a{
+  color: #fff;
+}
+.card:hover .btn-ser a {
+  color: var(--text-color);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* end Services */
+
+/* media screen/// */
+@media (max-width: 477px) {
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+    color: #333333;
+  }
+  .text-header h1 {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}
+@media (max-width: 799px) {
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+    color: #333333;
+  }
+  .text-header h1 {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+    color: #333333;
+  }
+  .text-header h1 {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}
+/* media screen/// */
