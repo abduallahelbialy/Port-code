@@ -109,10 +109,10 @@ header {
 }
 /* end header//// */
 /* start Services */
-.Services {
-  padding: 80px 0;
+.Services , .about-us {
+  padding: 100px 0;
 }
-.text-services h2 {
+.text-services h2 , .about-us h2 {
   background-color: var(--secondary-color);
   padding: 5px 15px;
   width: fit-content;
@@ -200,9 +200,159 @@ font-size: 20px;
   height: 100%;
 }
 
-
-
 /* end Services */
+/* start about-us */
+.about-us .des{
+  color: var(--text-gray);
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* end about-us */
+/* start testimonials */
+.testimonials {
+  padding: 100px 0;
+  background-color: var(--bg-section);
+}
+.testimonials h2 {
+  color: var(--primary-color);
+  font-size: 48px;
+}
+.card-testimonials {
+  width: 395px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-color);
+  background: linear-gradient(to bottom, #ffffff, rgb(53 86 232 / 10%));
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.testimonialscilents{
+line-height: 2;
+}
+.text-client{
+  color: var(--text-secondary-color);
+}
+
+/* end testimonials */
+/* start Frequently */
+.Frequently {
+  padding: 100px 0;
+}
+.text-frequently h2 {
+  font-size: 48px;
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+.text-frequently p {
+  color: #717171;
+  font-size: 16px;
+  line-height: 3;
+}
+.accordion-item{
+  background-color: #F5F8FF;
+  color: var(--text-gray);
+  font-size: 16px;
+  
+}
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent;
+  font-weight: bold;
+}
+.accordion {
+  --bs-accordion-btn-icon: url("../assets/send.svg");
+  --bs-accordion-btn-active-icon: url("../assets/Received.png"); 
+  --bs-accordion-btn-icon-width: 20px;
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+}
+.accordion-button {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* end Frequently */
+/* start contact  */
+.icon-us{
+  color: var(--primary-color);
+}
+.group-contact{
+  color: var(--text-gray);
+}
+.des-contact{
+  color: var(--text-gray);
+  line-height: 2;
+}
+.box-form{
+  background-color: #F5F8FF;
+  padding: 30px;
+  border-radius: 32px;
+  
+}
+.form-control{
+  padding:16px;
+  border-radius: 16px;
+ 
+}
+textarea{
+  resize: none ;
+}
+.btn-sned {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  width: 255px;
+  border-radius: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.toast{
+  background-color: #F5F8FF;
+}
+/* end contact  */
+/* start footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+.icon-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border: 2px solid #25d366; /* لون واتساب */
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s;
+}
+
+.icon-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+
+
+/* end footer */
 
 /* media screen/// */
 @media (max-width: 477px) {
@@ -210,10 +360,35 @@ font-size: 20px;
     margin: 10px 0;
     color: #333333;
   }
+  .text-frequently h2 {
+    font-size: 25px;
+    color: var(--primary-color);
+}
   .text-header h1 {
     line-height: 1.5;
     font-size: 20px;
   }
+  .accordion-button {
+    
+    font-size: 13px;
+}
+.testimonials ,.Services,
+.about-us ,.Frequently , header{
+  padding: 50px 0;
+}
+  .img-about{
+    padding: 0 !important;
+  }
+  .card-testimonials {
+    width: 300px !important;
+}
+.testimonials h2 {
+  color: var(--primary-color);
+  font-size: 37px;
+}
+.logo-footer ,.text-footer{
+  text-align: center;
+}
 }
 @media (max-width: 799px) {
   .navbar-nav .nav-item {
@@ -224,15 +399,45 @@ font-size: 20px;
     line-height: 1.5;
     font-size: 20px;
   }
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
 }
+}
+
 @media (max-width: 992px) {
   .navbar-nav .nav-item {
     margin: 10px 0;
     color: #333333;
   }
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
+}
   .text-header h1 {
     line-height: 1.5;
     font-size: 20px;
+  }
+}
+@media (max-width:1024px) {
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
+}}
+
+@media (max-width: 576px) {
+  .icon-whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+
+  .icon-whatsapp img {
+    width: 40px;
+    height: 40px;
   }
 }
 /* media screen/// */

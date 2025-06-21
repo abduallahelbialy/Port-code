@@ -1,35 +1,34 @@
 /* Reset some default styles */
 * {
-
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #374BFF;
-  --secondary-color: #E8C417;
+  --primary-color: #374bff;
+  --secondary-color: #e8c417;
   --text-color: #222020;
-  --text-secondary-color: #54555D;
-  --text-gray:#777881;
-  --bg-card:#ECECED;
-  --bg-section:#F7F7F7;
- --bg-nav:#F5F8FF;
+  --text-secondary-color: #54555d;
+  --text-gray: #777881;
+  --bg-card: #ececed;
+  --bg-section: #f7f7f7;
+  --bg-nav: #f5f8ff;
 }
 body {
   background-color: #fff;
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 /* //start navbar/// */
-.navbar-brand{
+.navbar-brand {
   color: var(--primary-color);
   font-weight: bold;
   font-size: 25px;
 }
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: var(--primary-color);
 }
-.navbar-nav{
+.navbar-nav {
   background: var(--bg-nav);
   border-radius: 24px;
   overflow: hidden;
@@ -38,25 +37,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
   margin: 0 6px;
-color: #333333 ;
+  color: #333333;
 }
-.navbar-nav .nav-item a{
+.navbar-nav .nav-item a {
   color: #333333;
   padding: 3px 20px;
   border-radius: 24px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.active{
+.active {
   background: var(--primary-color);
   color: #fff !important;
   font-weight: 500;
   border-radius: 24px;
- padding: 3px 20px;
+  padding: 3px 20px;
 }
-.language{
-  border-radius:24px ;
+.language {
+  border-radius: 24px;
   padding: 10px 12px;
   background: var(--bg-card);
   width: fit-content;
@@ -64,22 +63,21 @@ color: #333333 ;
 /* //end navbar/// */
 
 /* start header//// */
-header{
- padding: 100px 0;
-
+header {
+  padding: 100px 0;
 }
-.text-header h1{
+.text-header h1 {
   line-height: 2.5;
   font-size: 40px;
 }
-.text-header p{
+.text-header p {
   color: var(--text-secondary-color);
   font-size: 16px;
 }
-.partner{
+.partner {
   color: var(--primary-color);
 }
-.btn a{
+.btn a {
   background: var(--primary-color);
   color: #fff;
   padding: 8px 70px;
@@ -95,11 +93,11 @@ header{
   border: none;
 }
 
-.btn a:hover{
+.btn a:hover {
   background: var(--secondary-color);
   color: #fff;
 }
-.img-header{
+.img-header {
   background-image: url(../assets/Line\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,15 +105,16 @@ header{
   width: 100%;
   height: 400px;
   margin-top: -80px;
- 
 }
 /* end header//// */
 
 /* start Services */
-.Services {
-  padding: 80px 0;
+.Services,
+.about-us {
+  padding: 100px 0;
 }
-.text-services h2 {
+.text-services h2,
+.about-us h2 {
   background-color: var(--secondary-color);
   padding: 5px 15px;
   width: fit-content;
@@ -128,7 +127,7 @@ header{
   color: var(--text-gray);
   font-size: 20px;
 }
-.btn-silder{
+.btn-silder {
   margin-top: 12%;
 }
 .bg-arrow i {
@@ -141,7 +140,7 @@ header{
   background-color: #9c9da4;
   cursor: pointer;
 }
-.card{
+.card {
   width: 342px;
   height: 420px;
   background-color: var(--bg-card);
@@ -149,27 +148,27 @@ header{
   padding: 25px;
   border: none;
   transition: all 0.3s ease-in-out;
-  
+  margin: auto;
 }
-.card:hover{
+.card:hover {
   background-color: var(--primary-color);
   color: #fff;
 }
-.icon-card i{
+.icon-card i {
   width: 56px;
   height: 56px;
-  border-radius:16px;
- background-color: #FEFEFE;
- color: #222020;
+  border-radius: 16px;
+  background-color: #fefefe;
+  color: #222020;
   display: flex;
   justify-content: center;
   align-items: center;
-font-size: 20px;
+  font-size: 20px;
 }
-.text-card h3{
+.text-card h3 {
   font-size: 24px;
 }
-.text-card p{
+.text-card p {
   color: var(--text-color);
   font-size: 18px;
   line-height: 1.5;
@@ -178,7 +177,7 @@ font-size: 20px;
 .card:hover .text-card p {
   color: #fff;
 }
-.btn-ser{
+.btn-ser {
   background-color: var(--primary-color);
   padding: 5px 25px;
   width: fit-content;
@@ -190,9 +189,8 @@ font-size: 20px;
 }
 .card:hover .btn-ser {
   background-color: #fff;
-  
 }
-.btn-ser a{
+.btn-ser a {
   color: #fff;
 }
 .card:hover .btn-ser a {
@@ -203,19 +201,237 @@ font-size: 20px;
   height: 100%;
 }
 
-
-
 /* end Services */
+/* start about-us */
+.about-us .des {
+  color: var(--text-gray);
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* end about-us */
+
+/* start testimonials */
+.testimonials {
+  padding: 100px 0;
+  background-color: var(--bg-section);
+}
+.testimonials h2 {
+  color: var(--primary-color);
+  font-size: 48px;
+}
+.card-testimonials {
+  width: 395px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-color);
+  background: linear-gradient(to bottom, #ffffff, rgb(53 86 232 / 10%));
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.testimonialscilents{
+line-height: 2;
+}
+.text-client{
+  color: var(--text-secondary-color);
+}
+
+/* end testimonials */
+/* start Frequently */
+.Frequently {
+  padding: 100px 0;
+}
+.text-frequently h2 {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+.text-frequently p {
+  color: #717171;
+  font-size: 16px;
+  line-height: 3;
+}
+.accordion-item{
+  background-color: #F5F8FF;
+  color: var(--text-gray);
+  font-size: 16px;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent;
+  font-weight: bold;
+}
+.accordion {
+  --bs-accordion-btn-icon: url("../assets/send.svg");
+  --bs-accordion-btn-active-icon: url("../assets/Received.png"); 
+  --bs-accordion-btn-icon-width: 20px;
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+}
+.accordion-button {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-accordion .accordion-button {
+  display: flex;
+  justify-content: space-between;
+  text-align: left; 
+}
+
+.custom-accordion .accordion-button::after {
+  margin-right: auto; 
+  margin-left: 0;
+}
+
+.custom-accordion .accordion-body {
+  text-align: right; 
+}
+/* end Frequently */
+/* start contact  */
+.icon-us{
+  color: var(--primary-color);
+}
+.group-contact{
+  color: var(--text-gray);
+}
+.des-contact{
+  color: var(--text-gray);
+  line-height: 2;
+}
+.box-form{
+  background-color: #F5F8FF;
+  padding: 30px;
+  border-radius: 32px;
+  
+}
+.form-control{
+  padding:16px;
+  border-radius: 16px;
+ 
+}
+textarea{
+  resize: none ;
+}
+.btn-sned {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 30px;
+  width: 255px;
+  border-radius: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.toast{
+  background-color: #F5F8FF;
+}
+/* end contact  */
+/* start footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+.icon-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border: 2px solid #25d366; /* لون واتساب */
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s;
+}
+
+.icon-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+
+
+/* end footer */
 
 /* media screen/// */
-@media (max-width:477px) {
-  .navbar-nav .nav-item{
+@media (max-width: 477px) {
+  .navbar-nav .nav-item {
     margin: 10px 0;
-  color: #333333 ;
+    color: #333333;
   }
+  .logo-footer ,.text-footer{
+    text-align: center;
+  }
+  .accordion-button {
+    
+    font-size: 13px;
+}
   .text-header h1 {
     line-height: 1.5;
     font-size: 20px;
+  }
+  .img-about {
+    padding: 0 !important;
+  }
+  .card-testimonials {
+    width: 300px !important;
 }
+.testimonials h2 {
+  color: var(--primary-color);
+  font-size: 37px;
+}
+.testimonials ,.Services,
+.about-us ,.Frequently , header{
+  padding: 50px 0;
+}
+.text-frequently h2 {
+  font-size: 37px;
+  color: var(--primary-color);
+}
+}
+@media (max-width:799px) {
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
+}}
+@media (max-width:992px) {
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
+}}
+@media (max-width:1024px) {
+  .card-testimonials {
+    width: 250px ;
+    margin-bottom: 35px;
+    height: auto;
+}}
+@media (max-width: 576px) {
+  .icon-whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+
+  .icon-whatsapp img {
+    width: 40px;
+    height: 40px;
+  }
 }
 /* media screen/// */
