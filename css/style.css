@@ -328,6 +328,102 @@ textarea{
   background-color: #F5F8FF;
 }
 /* end contact  */
+
+/* start page about */
+.box-why{
+  background-color: #F5F8FF;
+  padding: 20px;
+  border-radius: 16px;
+  width: 350px;
+  border: 1px solid var(--text-secondary-color);
+  margin: auto;
+}
+.box-number span{
+  width: 25px ;
+  height: 25px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-choose-us{
+  padding: 30px 0;
+}
+.progress{
+  padding: 50px 0;
+  background: var(--primary-color);
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+}
+/* end page about */
+/* start serv-pge */
+.bg-cover {
+  position: relative;
+  background-color: #3c4bff;
+  color: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.circle {
+  position: absolute;
+  background-color: #f4cf2e;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle-left {
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.circle-right {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.content p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.content a {
+  background-color: white;
+  color: black;
+  padding: 10px 24px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content a:hover {
+  background-color: #f4cf2e;
+}
+/* end serv-pge */
 /* start footer */
 footer {
   background-color: var(--primary-color);
@@ -339,7 +435,7 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  border: 2px solid #25d366; /* لون واتساب */
+  border: 2px solid #25d366; 
   border-radius: 50%;
   padding: 10px;
   background-color: white;
@@ -374,6 +470,10 @@ footer {
     margin: 10px 0;
     color: #333333;
   }
+  .content p {
+    font-size: 17px;
+    line-height: 2;
+}
   .logo-footer ,.text-footer{
     text-align: center;
   }
@@ -390,6 +490,9 @@ footer {
   }
   .card-testimonials {
     width: 300px !important;
+}
+.Services-page{
+  flex-wrap: wrap;
 }
 .testimonials h2 {
   color: var(--primary-color);
@@ -409,19 +512,42 @@ footer {
     width: 250px ;
     margin-bottom: 35px;
     height: auto;
-}}
+}
+.Services-page{
+  flex-direction: column;
+  
+}
+.Services-page .card{
+  width: 80vw;
+}
+}
 @media (max-width:992px) {
   .card-testimonials {
     width: 250px ;
     margin-bottom: 35px;
     height: auto;
-}}
+}
+.Services-page{
+  flex-direction: column;
+  
+}
+.Services-page .card{
+  width: 80vw;
+}
+}
 @media (max-width:1024px) {
   .card-testimonials {
     width: 250px ;
     margin-bottom: 35px;
     height: auto;
-}}
+}
+
+.box-why {
+  
+  width: 296px;
+  
+}
+}
 @media (max-width: 576px) {
   .icon-whatsapp {
     bottom: 15px;
