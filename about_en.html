@@ -86,33 +86,41 @@
     <!-- //end nav// -->
 
     <!-- //start about us/// -->
-    <section class="about-us">
+    <section class="about-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 ">
-                    <div class="img-about px-5">
-                        <img src="assets/Frame 1597884213.png" alt="about us image" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 ">
-                    <div class="text-about">
-                        <h2 class="fw-semibold mb-3">About Us</h2>
-                        <p class="fw-bold fs-1 mb-5">Designing Your Digital Future</p>
-                        <div class="des">
-                            We are a passionate team creating exceptional digital experiences—from websites and apps to
-                            motion graphics and
-                            architectural designs. Our focus is on delivering creative, user-centered solutions that
-                            bring your vision to life and
-                            help you stand out.
-
-
+            <div class="text-about">
+                <h2 class="fw-semibold mb-3">About Us</h2>
+    
+            </div>
+            <div class="swiper about-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3 class="des-aa">Our Mission</h3>
+                            <p>We aim to deliver the best quality to our clients.</p>
                         </div>
                     </div>
-                    <div class="btn mt-5 position-relative mb-5">
-                        <a href="/about_en.html" class="text-decoration-none"> Read More</a>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3 class="des-aa">Our Vision</h3>
+                            <p>To be a leader in the industry with innovation and trust.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3 class="des-aa">Our Values</h3>
+                            <p>Integrity, Commitment, and Excellence.</p>
+                        </div>
                     </div>
                 </div>
-
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -249,6 +257,18 @@
     </footer>
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".about-swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

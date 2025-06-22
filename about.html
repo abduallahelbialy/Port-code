@@ -82,28 +82,37 @@
     <!-- //end nav// -->
 
     <!-- //start about us/// -->
-    <section class="about-us">
+    <section class="about-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 ">
-                    <div class="text-about">
-                        <h2 class="fw-semibold mb-3">من نحن</h2>
-                        <p class="fw-bold fs-1 mb-5">نصمم مستقبلك الرقمي </p>
-                        <div class="des">نحن فريق شغوف يجمع بين الإبداع والخبرة، نختص في تصميم تجارب رقمية متكاملة تبدأ
-                            من المواقع الإلكترونية والتطبيقات، مرورًا
-                            بالموشن جرافيك، ووصولاً إلى التصاميم المعمارية. نضع المستخدم في قلب كل تجربة نصممها، ونحرص
-                            على تقديم حلول مبتكرة تُعبّر
-                            عن رؤيتك وتساعدك على التميز في سوقك الرقمي</div>
+            <div class="text-about">
+                <h2 class="fw-semibold mb-3">من نحن</h2>
+            </div>
+            <div class="swiper about-swiper">
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3>مهمتنا</h3>
+                            <p>نهدف إلى تقديم أفضل جودة لعملائنا.</p>
+                        </div>
                     </div>
-                    <div class="btn mt-5 position-relative mb-5">
-                        <a href="/about.html" class="text-decoration-none"> اقرأ المزيد</a>
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3>رؤيتنا</h3>
+                            <p>أن نكون روادًا في المجال من خلال الابتكار والثقة.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-ss">
+    
+                            <h3>قيمنا</h3>
+                            <p>النزاهة، الالتزام، والتميّز.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 ">
-                    <div class="img-about px-5">
-                        <img src="assets/Frame 1597884213.png" alt="about us image" class="img-fluid">
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -241,7 +250,18 @@
 
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script>
+        new Swiper(".about-swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
